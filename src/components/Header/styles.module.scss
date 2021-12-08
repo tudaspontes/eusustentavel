@@ -11,6 +11,7 @@
 
   display:flex;
   align-items: center;
+  
 
   nav {
     margin-left: 5rem;
@@ -22,7 +23,7 @@
       padding: 0 0.5rem;
       height: 5rem;
       line-height: 5rem;
-      color: var(--gray-300);
+      color: var(--gray-900);
       transition: color 0.2s;
 
       & + a {
@@ -30,11 +31,11 @@
       }
 
       &:hover{
-        color:var(--white);
+        color:var(--gray-300);
       }
 
       &.active {
-        color:var(--white);
+        color:var(--gray-300);
         font-weight: bold;
       }
 
@@ -48,10 +49,20 @@
         left: 0;
         background:var(--yellow-500)
       }
+
+      & + img {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 
   button {
     margin-left: auto;
   }
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
 }
